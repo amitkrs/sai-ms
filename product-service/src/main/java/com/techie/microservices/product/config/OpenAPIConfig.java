@@ -1,3 +1,4 @@
+/*
 package com.techie.microservices.product.config;
 
 import io.swagger.v3.oas.models.ExternalDocumentation;
@@ -22,3 +23,4 @@ public class OpenAPIConfig {
                         .url("https://product-service-dummy-url.com/docs"));
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.techie.microservices.product.config;
 
 import io.micrometer.observation.ObservationRegistry;
@@ -12,3 +13,4 @@ public class ObservationConfig {
         return new ObservedAspect(registry);
     }
 }
+*/

@@ -7,6 +7,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 @Service
 @RequiredArgsConstructor
 @Slf4j
@@ -41,7 +43,11 @@ public class OrderService {
 //    }
 
     public void placeOrder(OrderRequest orderRequest) {
-
+        Order order = Order.builder().orderNumber(UUID.randomUUID().toString())
+                .skuCode(orderRequest.skuCode()).quantity(orderRequest.quantity())
+                .price(orderRequest.price())
+                .build();
+        orderRepository.save(order);
     }
 
 }
